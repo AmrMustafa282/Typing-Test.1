@@ -29,7 +29,7 @@ const wpmTag = document.querySelector(".wpm span");
 const cpmTag = document.querySelector(".cpm span");
 
 let timer;
-let maxTime = 60;
+let maxTime = 6;
 let timeLeft = maxTime;
 let charIndex = mistakes = isTyping = 0;
 
@@ -57,7 +57,7 @@ function initTyping(){
     let typedChar =inpField.value.split("")[charIndex];
     if(charIndex <chars.length-1 && timeLeft>0){
         if(!isTyping){
-            timer = setInterval(initTimer , 1);
+            timer = setInterval(initTimer , 1000);
             isTyping = true;
         }
         if(typedChar == null){
