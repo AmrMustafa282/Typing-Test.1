@@ -57,7 +57,7 @@ function initTyping(){
     let typedChar =inpField.value.split("")[charIndex];
     if(charIndex <chars.length-1 && timeLeft>0){
         if(!isTyping){
-            timer = setInterval(initTimer , 1000);
+            timer = setInterval(initTimer , 1);
             isTyping = true;
         }
         if(typedChar == null){
